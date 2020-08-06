@@ -24,6 +24,8 @@ connect()
 
 const app = express()
 
+app.use(express.static("build"))
+
 app.use(cors())
 app.use(bodyParser())
 app.get("/ping", (_req, res) => res.send("pong"))
