@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
+    "outFile": "./comp.js",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
     "strictPropertyInitialization": true,
     "strictBindCallApply": true,
     "noUnusedParameters": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "Node",
+    "module": "amd"
   }
 }
