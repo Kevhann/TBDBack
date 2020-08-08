@@ -1,8 +1,6 @@
 import * as env from 'dotenv';
 
-if (process.env.NODE_ENV !== 'production') {
-  env.config();
-}
+env.config();
 
 const PORT = process.env.PORT!;
 let MONGODB_URI = process.env.MONGODB_URI!;

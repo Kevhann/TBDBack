@@ -9,6 +9,7 @@
     "start": "ts-node index.ts",
     "build": "tsc",
     "heroku": "node ./comp/index.js",
+    "build:front": "cd ../front && ",
     "deploy": "git add . && git commit -m 'heroku deploy' && git push heroku master"
   },
   "keywords": [],
