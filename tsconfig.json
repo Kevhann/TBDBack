@@ -1,18 +1,37 @@
 {
   "compilerOptions": {
-    "outFile": "./comp.js",
-    "noImplicitAny": true,
+    "target": "es2019",
+    "lib": [
+      "es6",
+      "es2017",
+      "es2019",
+      "esnext.asynciterable"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "removeComments": false,
     "noImplicitReturns": true,
+    "noImplicitAny": true,
     "strictNullChecks": true,
-    "allowSyntheticDefaultImports": true,
-    "strictPropertyInitialization": true,
-    "strictBindCallApply": true,
-    "noUnusedParameters": true,
-    "noImplicitThis": true,
+    "noUnusedLocals": true,
     "alwaysStrict": true,
-    "esModuleInterop": true,
-    "declaration": true,
-    "moduleResolution": "Node",
-    "module": "amd"
-  }
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
+    "baseUrl": "./src/types",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "exclude": [],
+  "include": [
+    "*.ts",
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "migrations/**/*.ts"
+  ]
 }
