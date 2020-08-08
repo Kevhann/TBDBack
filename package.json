@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev index.ts",
     "start": "ts-node index.ts",
-    "tsc": "rm comp.js && rm comp.d.ts && tsc"
+    "build": "tsc"
+    ,"heroku": "node ./comp/index.js"
   },
   "keywords": [],
   "author": "",

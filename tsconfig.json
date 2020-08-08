@@ -9,7 +9,7 @@
     ],
     "outDir": "./comp",
     "module": "commonjs",
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "sourceMap": true,
     "removeComments": false,
@@ -20,12 +20,9 @@
     "alwaysStrict": true,
     "noFallthroughCasesInSwitch": true,
     "typeRoots": [
-      "./src/types",
       "./node_modules/@types"
     ],
-    "baseUrl": "./src/types",
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "resolveJsonModule": true,
     "esModuleInterop": true
   },

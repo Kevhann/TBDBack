@@ -1,9 +1,9 @@
-import * as express from 'express';
-import * as cors from 'cors';
-import * as mongoose from 'mongoose';
+import express from 'express';
+import cors from 'cors';
+import mongoose from 'mongoose';
 import { MONGODB_URI, PORT } from './utils/config';
 import * as http from 'http';
-import * as bodyParser from 'body-parser';
+import bodyParser from 'body-parser';
 import { testRouter } from './routes/test';
 
 // Mongo
